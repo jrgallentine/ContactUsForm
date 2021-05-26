@@ -1,0 +1,26 @@
+﻿@model Contact
+<form method="post" asp-action="Index" asp-controller="Home">
+    <h1>Contact Us Form</h1>
+    <label for="firstName">First Name</label>
+    <br />
+    <input id="firstName" type="text" name="firstName">
+    <br />
+    <br />
+    <label for="lastName">Last Name</label>
+    <br />
+    <input id="lastName" type="text" name="lastName">
+    <br />
+    <br />
+    <label for="email">Email</label>
+    <br />
+    <input id="email" type="email" pattern="^[a-zA-Z0-9._+-]+@("@")[a-zA-Z0-9.-]+\.[a-zA-Z]{2,9}$" name="email" required>
+    <br />
+    <br />
+    <label for="message">Message</label>
+    <br />
+    <textarea name="Message" id="Message"></textarea>
+    <br />
+    <br />
+    <input type="submit" name="Submit" value="SUBMIT" class="submit" />
+
+</form> 
